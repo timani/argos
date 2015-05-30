@@ -1,11 +1,11 @@
 Argos
 =================
 
-A light Docker based sandbox image for PHP web development that is based on a Ubuntu 14.04 OS. 
+A light Docker based sandbox image for PHP web development that is based on a Fedora 21 OS. 
 
 ![Docker logo](http://upload.wikimedia.org/wikipedia/commons/7/79/Docker_(container_engine)_logo.png "Docker logo")
 
-This image with comes built with nginx, PHP-FPM, Drush, MySQL, Redis and Varnish.
+This image with comes built with nginx, PHP-FPM, Drush, MySQL, Redis and Varnish that allows you to create your own configuration and extend it to meet your projects requirements or you can try one of the built-in setups. These provide for both single and multi node development stacks. 
 
 ## Documentation
 
@@ -26,21 +26,19 @@ Naboo wedge jawa coruscant dooku naboo mon. Darth mandalore lobot c-3p0 hutt nab
 4. Run the following command for initializing the configuration: `./argos init`
 
 ## Installation
+
 Install docker (and boot2docker if you're on OSX or Windows) following the instructions from this page: https://docs.docker.com/#installation-guides
 You also need to install docker-compose
 ```
 $ yum -y install git docker python-pip
-$ pip install docker-compose==1.1.0-rc2
+$ pip install docker-compose==1.2.0
 $ systemctl start docker
 $ systemctl enable docker
 ```
 or
 ```
-curl -L https://github.com/docker/fig/releases/download/1.1.0-rc2/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose; chmod +x /usr/local/bin/docker-compose
+curl -L https://github.com/docker/compose/releases/download/1.2.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose; chmod +x /usr/local/bin/docker-compose
 ```
-
-## Components
-Naboo wedge jawa coruscant dooku naboo mon.
 
 ## Workflow
 ```
