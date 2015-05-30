@@ -1,5 +1,7 @@
 Argos
 =================
+[![Coverage Status](https://coveralls.io/repos/timani/argos/badge.svg)](https://coveralls.io/r/timani/argos) 
+[![Circle CI](https://circleci.com/gh/timani/argos.svg?style=svg)](https://circleci.com/gh/timani/argos)
 
 A light Docker based sandbox image for PHP web development that is based on a Fedora 21 OS. 
 
